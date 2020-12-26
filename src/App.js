@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+//import { TodoApp } from "./components/TodoApp";
+import { MainApp } from "./components/useContext/MainApp";
+//import { EjercicioMemorize } from "./components/EjercicioMemorize";
+//import { UseMemo } from "./components/UseMemo";
+//import { MemoEjemplo } from "./components/MemoEjemplo";
+//simport { MultipleHooks } from "./components/MultipleHooks";
+//import { FocusScreen } from "./components/UseRef/FocusScreen";
+//import { RealExampleRef } from "./components/UseRef/RealExampleRef";
+//import { UseState } from "./components/UseState"
+//import { UseCounter } from './componentUs/UseCounter'
+//import { UseEffect } from "./components/UseEffect";
+//import { FormWithCustomHook } from "./components/UseEffect/FormWithCustomHook";
+
+//import { UseCallback } from "./components/UseCallback";
+//import { UseReducerIntro } from "./helpers/useReducerIntro";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container text-center">
+      {/* <h1>React Hooks App</h1> */}
+      <MainApp />
+      <div className="container">
+        <div className="row">{/* Paste here the components */}</div>
+      </div>
     </div>
   );
 }
